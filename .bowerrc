@@ -1,4 +1,3 @@
 {
-    "directory": "target/bower_components",
-    "strict-ssl": false
+    "directory": "target/bower_components"
 }

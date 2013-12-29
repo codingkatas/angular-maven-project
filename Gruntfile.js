@@ -115,10 +115,10 @@ module.exports = function (grunt) {
                     'src/main/webapp/lib/angular-1.2.5/angular-resource.min.js',
                     'src/main/webapp/lib/angular-1.2.5/angular-route.min.js',
                     'src/main/webapp/lib/ui-bootstrap-tpls-0.5.0.min.js',
-                    'src/main/webapp/scripts/trex/util.js',
-                    'src/main/webapp/scripts/trex/app.js',
-                    'src/main/webapp/scripts/trex/services/RememberListService.js',
-                    'src/main/webapp/scripts/trex/controllers/HomeCtrl.js',
+                    'src/main/webapp/scripts/codingkatas/util.js',
+                    'src/main/webapp/scripts/codingkatas/app.js',
+                    'src/main/webapp/scripts/codingkatas/services/RememberListService.js',
+                    'src/main/webapp/scripts/codingkatas/controllers/HomeCtrl.js',
                     'src/test/webapp/scripts/**/*.js'
                 ],
                 reporters: ['progress'],
@@ -127,7 +127,7 @@ module.exports = function (grunt) {
                 singleRun: true,
                 plugins: [
                     'karma-jasmine',
-                    'karma-phantomjs-launcher'                                                      dir
+                    'karma-phantomjs-launcher'
                 ]
             },
             ci: {
