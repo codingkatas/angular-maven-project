@@ -1,0 +1,21 @@
+<groups xmlns="http://www.isdc.ro/wro">
+    <group name="libs">
+        <js>/lib/angular-1.2.5/angular.min.js</js>
+        <js>/lib/angular-1.2.5/angular-resource.min.js</js>
+        <js>/lib/jquery-2.0.3.min.js</js>
+        <js>/lib/ui-bootstrap-tpls-0.5.0.min.js</js>
+        <js>/lib/sugar-1.3.9.min.js</js>
+        <css>/css/bootstrap-3.0/css/bootstrap.min.css</css>
+        <css>/css/bootstrap-3.0/css/bootstrap-theme.min.css</css>
+    </group>
+
+    <group name="app">
+        <js>/app/trex/util.js</js>
+        <js>/app/trex/app.js</js>
+        <js>/app/trex/RememberListService.js</js>
+        <js>/app/trex/HomeCtrl.js</js>
+        <css>/css/app.css</css>
+    </group>
+
+
+</groups>
