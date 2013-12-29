@@ -10,10 +10,10 @@
     </group>
 
     <group name="app">
-        <js>/app/trex/util.js</js>
-        <js>/app/trex/app.js</js>
-        <js>/app/trex/RememberListService.js</js>
-        <js>/app/trex/HomeCtrl.js</js>
+        <js>/app/codingkatas/util.js</js>
+        <js>/app/codingkatas/app.js</js>
+        <js>/app/codingkatas/RememberListService.js</js>
+        <js>/app/codingkatas/HomeCtrl.js</js>
         <css>/css/app.css</css>
     </group>
 

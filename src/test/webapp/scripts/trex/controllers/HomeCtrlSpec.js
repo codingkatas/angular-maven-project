@@ -1,10 +1,10 @@
 'use strict';
-/*global module, inject, describe, it, expect, trex, log */
+/*global module, inject, describe, it, expect, codingkatas, log */
 
 describe('Controller: HomeCtrl', function () {
 
     // load the controller's module
-    beforeEach(module('trex'));
+    beforeEach(module('codingkatas'));
 
     var HomeCtrl,
         scope;
@@ -12,7 +12,7 @@ describe('Controller: HomeCtrl', function () {
     // Initialize the controller and a mock scope
     beforeEach(inject(function ($controller, $rootScope, RememberListService) {
         scope = $rootScope.$new();
-        HomeCtrl = $controller(trex.controllers.HomeCtrl, {
+        HomeCtrl = $controller(codingkatas.controllers.HomeCtrl, {
             $scope: scope,
             RememberListService: RememberListService
         });

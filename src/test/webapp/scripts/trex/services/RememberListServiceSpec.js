@@ -1,10 +1,10 @@
 'use strict';
-/*global module, inject, describe, it, expect, trex, log */
+/*global module, inject, describe, it, expect, codingkatas, log */
 
 describe('RememberListService tests', function () {
 
     beforeEach(function () {
-        module('trex');
+        module('codingkatas');
     });
 
     describe('Test that RememberListService returns a list of RememberList resources', function () {
