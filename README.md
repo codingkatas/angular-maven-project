@@ -24,6 +24,7 @@ Issues (not prioritized):
 
 - Integrate wro4j in the workflow (must be done manually for now)
 - Improve integration with Yeoman (both templates and paths)
+- Integration with bower
 
 
 Have fun :-)
