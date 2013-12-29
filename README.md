@@ -12,7 +12,7 @@ The workflow is a follows, after cloning the project:
 1. From the console in the project root, execute "mvn install" (downloads Node, npm etc.)
 2. Import the project into your favorite IDE - Maven style
 3. From the console, write "grunt server" (starts the prototyping mode - based on Yeoman)
-4. Run e2e tests with Protractor - write "grunt protractor"
+4. To run e2e tests with Protractor - write "grunt protractor" (you will probably have to fix the port number and app path)
 5. Generate new angular controller "yo angular:controller [XXX]" (beware, this step needs improvement - there is some manual stuff to do)
 
 At any time you can fire up the application in your favorite JEE6/7 container, but notice that the port number in the e2e tests
