@@ -1,6 +1,6 @@
 describe('homepage', function() {
-    it('should say welcome', function() {
-        browser.get('/codingkatas_war_exploded');
+    it('should present the expected text in the h1 element', function() {
+        browser.get('/angular-maven-project');
 
         //element(by.model('yourName')).sendKeys('Julie');
 

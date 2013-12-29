@@ -32,7 +32,9 @@
         "grunt-protractor-runner": "~0.2.0",
         "protractor": "~0.14.0",
         "yo": "~1.0",
-        "generator-angular": "~0.6.0"
+        "generator-angular": "~0.6.0",
+        "chromedriver": "~2.6.0",
+        "selenium-server": "~2.38.0"
     },
     "scripts": {
         "test": "grunt test"

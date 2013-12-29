@@ -17,7 +17,7 @@ exports.config = {
     // The location of the selenium standalone server .jar file, relative
     // to the location of this config. If no other method of starting selenium
     // is found, this will default to protractor/selenium/selenium-server...
-    seleniumServerJar: 'src/test/resources/selenium-server-standalone-2.38.0.jar',
+    seleniumServerJar: '../../../node_modules/selenium-server/lib/runner/selenium-server-standalone-2.38.0.jar',
     // The port to start the selenium server on, or null if the server should
     // find its own unused port.
     seleniumPort: null,
@@ -25,7 +25,7 @@ exports.config = {
     // find chromedriver. This will be passed to the selenium jar as
     // the system property webdriver.chrome.driver. If null, selenium will
     // attempt to find chromedriver using PATH.
-    chromeDriver: 'src/test/resources/chromedriver',
+    chromeDriver: '../../../node_modules/chromedriver/lib/chromedriver/chromedriver',
     // If true, only chromedriver will be started, not a standalone selenium.
     // Tests for browsers other than chrome will not run.
     chromeOnly: false,
@@ -52,7 +52,7 @@ exports.config = {
     //
     // Spec patterns are relative to the location of this config.
     specs: [
-        './src/test/webapp/e2e/HomeSpec.js',
+        './*Spec.js'
     ],
 
     // ----- Capabilities to be passed to the webdriver instance ----
@@ -69,7 +69,7 @@ exports.config = {
     //
     // A base URL for your application under test. Calls to protractor.get()
     // with relative paths will be prepended with this.
-    baseUrl: 'http://localhost:9080',
+    baseUrl: 'http://localhost:8080',
 
     // Selector for the element housing the angular app - this defaults to
     // body, but is necessary if ng-app is on a descendant of <body>
