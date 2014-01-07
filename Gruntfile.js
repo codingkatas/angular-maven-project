@@ -117,6 +117,7 @@ module.exports = function (grunt) {
                     'src/main/webapp/lib/angular-1.2.5/angular-resource.min.js',
                     'src/main/webapp/lib/angular-1.2.5/angular-route.min.js',
                     'src/main/webapp/lib/ui-bootstrap-tpls-0.5.0.min.js',
+                    'src/main/webapp/lib/angular-ui-router-0.2.7.js',
                     'src/main/webapp/scripts/codingkatas/util.js',
                     'src/main/webapp/scripts/codingkatas/app.js',
                     'src/main/webapp/scripts/codingkatas/services/RememberListService.js',

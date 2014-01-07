@@ -32,11 +32,14 @@
     <script src="lib/angular-1.2.5/angular-resource.min.js"></script>
 
     <script type="text/javascript" src="lib/ui-bootstrap-tpls-0.5.0.min.js"></script>
+    <script type="text/javascript" src="lib/angular-ui-router-0.2.7.js"></script>
 
     <script src="scripts/codingkatas/util.js"></script>
     <script src="scripts/codingkatas/app.js"></script>
     <script src="scripts/codingkatas/services/RememberListService.js"></script>
     <script src="scripts/codingkatas/controllers/HomeCtrl.js"></script>
+    <script src="scripts/codingkatas/controllers/sub2/Sub2Ctrl.js"></script>
+    <script src="scripts/codingkatas/controllers/sub1/Sub1Ctrl.js"></script>
 
 </head>
 
@@ -70,7 +73,14 @@
             </tr>
             </tbody>
         </table>
+
     </div>
+
+    <div ui-view="sub1"></div>
+    <br>
+    <div ui-view="sub2"></div>
+
+
 
     <hr>
 

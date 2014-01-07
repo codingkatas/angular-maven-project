@@ -2,7 +2,7 @@
 
 namespace('codingkatas');
 
-var appModule = angular.module('codingkatas', ['ngResource']);
+var appModule = angular.module('codingkatas', ['ngResource', 'ui.router']);
 
 appModule.factory('httpInterceptor', function ($q, $rootScope) {
 
@@ -20,7 +20,6 @@ appModule.factory('httpInterceptor', function ($q, $rootScope) {
             return $q.reject(rejection);
         },
 
-
         // optional method
         'response': function (response) {
             $rootScope.showOverlay = false;
@@ -35,15 +34,28 @@ appModule.factory('httpInterceptor', function ($q, $rootScope) {
     };
 });
 
-appModule.config(['$httpProvider',
-    function ($httpProvider) {
+appModule.config(['$httpProvider', '$stateProvider',
+    function ($httpProvider, $stateProvider) {
         $httpProvider.interceptors.push('httpInterceptor');
+
+        $stateProvider
+            .state('app', {
+                url: '/',
+                views: {
+                    'sub1': {
+                        templateUrl: 'views/sub1.html'
+                    },
+                    'sub2': {
+                        templateUrl: 'views/sub2.html'
+                    }
+                }
+            });
     }
-]);
+])
+;
 
 
 appModule.run(function ($rootScope) {
-
     $rootScope.showOverlay = false;
 });
 
