@@ -57,6 +57,12 @@ appModule.config(['$httpProvider', '$stateProvider',
 
 appModule.run(function ($rootScope) {
     $rootScope.showOverlay = false;
+
+
+    $rootScope.data = {
+        sharedData: ''
+    };
+
 });
 
 
